@@ -1,0 +1,45 @@
+.tracklist-section {
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    margin-top: 50px;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+  }
+
+  .tracklist-section::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .tracklist-section::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  .tracklist-section::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+    height: 50px; 
+  }
+  
+  .tracklist-section::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+
+  .usb-title {
+    margin-top: 15px;
+    margin-left: -500px;
+    display: flex;
+    font-family: 'Orbitron';
+    font-weight: 200;
+    color: #FC395C;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  h3 {
+    color: #FC395C;
+}

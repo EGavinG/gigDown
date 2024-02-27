@@ -6,16 +6,16 @@
 #ffb700 Orange */
 
 Main { 
-    width: 1000px;
+    width: 1280px;
     height: 680px;
-    border: 3px solid #FC395C;
 }
 
 h1 {
-    margin-top: 55px;
+    margin-top: 15px;
     display: flex;
     font-family: 'Orbitron';
     font-weight: 200;
     color: #FC395C;
     justify-content: flex-end;
 }
+
