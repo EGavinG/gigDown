@@ -1,10 +1,18 @@
 .Track {
-    width: 100px;
-    box-sizing: border-box;
-    border: 3px solid #FC395C;
-    padding: 10px;
+  display: flex;
+  width: 250px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
 
   p {
     color: #E1E1E1;
+    font-size: small;
+  }
+
+  img {
+    width:150px;
+    border: 3px solid #FC395C;
   }

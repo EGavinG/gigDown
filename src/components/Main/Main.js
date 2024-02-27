@@ -1,11 +1,13 @@
 import './Main.css'
 import { useState } from 'react'
 import Tracklist from '../Tracklist/Tracklist'
+import TrackDisplay from '../Track-Display/Track-Display'
+import '../../255-200.png';
 
 const Main = () => {
 
     const trackListData = [
-        { id: 1, title: 'Rewind', artist: 'Kelela', album: 'Hallucinogen' },
+        { id: 1, title: 'Rewind', artist: 'Kelela', album: 'Hallucinogen', img: '../../255-200.png' },
         { id: 2, title: 'Eternity', artist: 'Mondo Grosso', album: 'Self-Titled' },
         { id: 3, title: 'To Dawn', artist: 'Tetsuya Numora', album: 'FFX OST' },
         { id: 4, title: 'Belive Me', artist: 'Erika De Casier', album: 'Still'},
@@ -41,9 +43,10 @@ const Main = () => {
 
     return (
         <div className='Main'> 
-            <main>
                 <h1>gigDown</h1>
+            <main>
                 <Tracklist tracklist={tracklist}/>
+                <TrackDisplay tracklist={tracklist}/>
             </main>
         </div>
     )
