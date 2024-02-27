@@ -17,7 +17,7 @@
   .tracklist-section::-webkit-scrollbar-track {
     background: black;
   }
-  
+
   .tracklist-section::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 5px; 
@@ -41,5 +41,6 @@
   }
 
   h3 {
+    margin-left: 215px;
     color: #FC395C;
 }

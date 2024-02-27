@@ -20,6 +20,7 @@ const Tracklist = ({tracklist}) => {
     return (
         <div className ='Tracklist'>
             <h2 className='usb-title'>USB Library</h2>
+          {!tracklist.length && <h3>USB Library Empty -- Add Some Tracks!</h3>}
         <section className='tracklist-section'>
             {trackCards}
         </section>
