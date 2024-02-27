@@ -1,0 +1,10 @@
+.Track {
+    width: 100px;
+    box-sizing: border-box;
+    border: 3px solid #FC395C;
+    padding: 10px;
+  }
+
+  p {
+    color: #FC395C;
+  }

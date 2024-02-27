@@ -1,21 +1,28 @@
 import './Tracklist.css'
+import Track from '../Track/Track'
 import { useState } from 'react'
 
-const Tracklist = () => {
 
-    const trackListData = [
-        { id: 1, title: 'Rewind', Artist: 'Kelela', Album: 'Hallucinogen' },
-        { id: 2, title: 'Eternity', Artist: 'Mondo Grosso', Album: 'Self-Titled' },
-        { id: 3, title: 'To Dawn', Artist: 'Tetsuya Numora', Album: 'FFX OST' },
-        ]
-
-    const [tracklist, setTracklist] = useState([trackListData])
-
+const Tracklist = ({tracklist}) => {
+  
+    const trackCards = tracklist.map(track => {
+        return (
+          <Track
+            id={track.id}
+            title={track.title}
+            artist={track.artist}
+            key={track.id}
+          />
+        )
+      })
 
 
     return (
         <div className ='Tracklist'>
-            
+            <h2 className='usb-title'>USB Library</h2>
+        <section className='tracklist-section'>
+            {trackCards}
+        </section>
         </div>
     )
 }
