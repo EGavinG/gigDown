@@ -1,4 +1,4 @@
-import './Main.css'
+import './UsbContent.css'
 import { useState } from 'react'
 import Tracklist from '../Tracklist/Tracklist'
 import TrackDisplay from '../Track-Display/Track-Display'
