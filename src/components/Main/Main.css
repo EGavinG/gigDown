@@ -1,4 +1,4 @@
-/* #DC3250 Blue
+/* #698EFF Blue
 #FC395C Red 
 #00ED95 Green
 #E1E1E1 White 
@@ -6,8 +6,8 @@
 #ffb700 Orange */
 
 Main { 
+    display: flex;
     width: 1280px;
-    height: 680px;
 }
 
 h1 {
@@ -17,5 +17,20 @@ h1 {
     font-weight: 200;
     color: #FC395C;
     justify-content: flex-end;
+}
+
+h2 {
+    font-family: 'Orbitron';
+    font-weight: 200;
+}
+
+h3 {
+    font-family: 'Orbitron';
+    font-weight: 200;
+}
+
+p {
+    margin: 5px;
+    font-family: 'Orbitron';
 }
 
