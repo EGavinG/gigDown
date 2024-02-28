@@ -1,12 +1,18 @@
 import './Tracklist.css'
 import Track from '../Track/Track'
+import TrackDisplay from '../Track-Display/Track-Display'
 import { useState } from 'react'
 
 
-const Tracklist = ({tracklist}) => {
 
-  
+const Tracklist = ({tracklist, setSelectedTrack}) => {
+
+    const handleTrackClick = (track) => {
+      setSelectedTrack(track);
+    };
+
     const trackCards = tracklist.map(track => {
+      console.log(track.img)
         return (
           <Track
             img={track.img}
@@ -14,10 +20,10 @@ const Tracklist = ({tracklist}) => {
             title={track.title}
             artist={track.artist}
             key={track.id}
+            onClick={() => handleTrackClick(track)}
           />
         )
       })
-
 
     return (
         <div className ='Tracklist'>
