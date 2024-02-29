@@ -22,6 +22,7 @@ const Tracklist = ({tracklist, setSelectedTrack}) => {
             genre={track.genre}
             bpm={track.bpm}
             keys={track.keys}
+            duration={track.duration}
             key={track.id}
 
             onClick={() => handleTrackClick(track)}

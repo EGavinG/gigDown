@@ -17,6 +17,7 @@ const TrackDisplay = ({selectedTrack}) => {
                     <p className='text'>Genre: {selectedTrack.genre}</p>
                     <p className='text'> BPM: {selectedTrack.bpm}</p>
                     <p className='text'> Key: {selectedTrack.key}</p>
+                    <p className='text'> Duration: {selectedTrack.duration}</p>
                 </section>
                 </article>
             </div>
