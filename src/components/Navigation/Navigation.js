@@ -17,7 +17,7 @@ function Navigation() {
   const buttonText = location.pathname === '/' ? 'Checklist' : 'USB';
 
   return (
-    <div>
+    <div className='nav'>
         <h1>gigDown</h1>
     <nav className='nav'>
       <button className ='toggle-bttn' onClick={toggleContent}>{buttonText}</button>

@@ -1,16 +1,11 @@
-/* #698EFF Blue
-#FC395C Red 
-#00ED95 Green
-#E1E1E1 White 
-#4E2AFF Purple
-#ffb700 Orange */
-
 Form {
     margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px; 
+    width: 450px; 
+    margin-right: 30px;
+    margin-left: 25px;
 }
 
 h2.input-title {
@@ -41,7 +36,7 @@ input::placeholder {
 
 button.submit {
     margin-top: 20px;
-    width: 500px;
+    width: 450px;
     height: 50px;
     font-size: large;
     font-family: 'Orbitron';
