@@ -20,6 +20,7 @@ h2.title {
 }
 
 .album-big {
+    border: 3px solid #FC395C;
     width: 300px;
 }
 

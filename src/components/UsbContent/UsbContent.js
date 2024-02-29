@@ -2,7 +2,6 @@ import './UsbContent.css'
 import { useState } from 'react'
 import Tracklist from '../Tracklist/Tracklist'
 import TrackDisplay from '../Track-Display/Track-Display'
-
 import Image from '../../255-200.png';
 
 const Main = () => {
@@ -45,7 +44,6 @@ const Main = () => {
       
         return (
           <div className="Main">
-            <h1>gigDown</h1>
             <main>
               <Tracklist tracklist={tracklist} setSelectedTrack={setSelectedTrack} />
               <TrackDisplay selectedTrack={selectedTrack || {}} />
