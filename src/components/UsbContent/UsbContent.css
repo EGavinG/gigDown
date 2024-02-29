@@ -2,21 +2,12 @@
 #FC395C Red 
 #00ED95 Green
 #E1E1E1 White 
-#9055D4 Purple
+#4E2AFF Purple
 #ffb700 Orange */
 
 Main { 
     display: flex;
     width: 1280px;
-}
-
-h1 {
-    margin-top: 15px;
-    display: flex;
-    font-family: 'Orbitron';
-    font-weight: 200;
-    color: #FC395C;
-    justify-content: flex-end;
 }
 
 h2 {

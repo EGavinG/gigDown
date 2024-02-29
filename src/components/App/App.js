@@ -1,14 +1,22 @@
-import './App.css'
-import UsbContent from '../UsbContent/UsbContent'
-import ChecklistContent from '../ChecklistContent/CheclistContent'
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import UsbContent from '../UsbContent/UsbContent';
+import ChecklistContent from '../ChecklistContent/ChecklistContent';
+import Navigation from '../Navigation/Navigation';
 
 function App() {
-
   return (
-    <div className="App">
-      <UsbContent />
-      <ChecklistContent />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<UsbContent />} />
+          <Route path="/checklist" element={<ChecklistContent />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
