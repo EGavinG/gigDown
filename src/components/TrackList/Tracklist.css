@@ -17,6 +17,7 @@
   
   .tracklist-section::-webkit-scrollbar-track {
     background: #4E2AFF;
+    border-radius: 5px; 
   }
 
   .tracklist-section::-webkit-scrollbar-thumb {

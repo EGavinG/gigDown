@@ -12,7 +12,7 @@ const Tracklist = ({tracklist, setSelectedTrack}) => {
     };
 
     const trackCards = tracklist.map(track => {
-        console.log(track.bpm)
+
         return (
           <Track
             img={track.img}

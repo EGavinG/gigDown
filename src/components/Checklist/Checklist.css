@@ -1,0 +1,55 @@
+/* #698EFF Blue
+#FC395C Red 
+#00ED95 Green
+#E1E1E1 White 
+#4E2AFF Purple
+#ffb700 Orange */
+
+.Checklist {
+    margin-top: 30px;
+}
+
+.checklist-section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 800px;
+    height: 455px;
+    padding: 10px;
+    margin-top: 30px;
+    direction: rtl;
+}
+
+.checklist-section::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.checklist-section::-webkit-scrollbar-track {
+    background: #698EFF;
+    border-radius: 5px; 
+}
+
+.checklist-section::-webkit-scrollbar-thumb {
+    background: #E1E1E1; 
+    border-radius: 5px; 
+    height: 50px; 
+}
+
+
+h2.checklist-title {
+    display: flex;
+    color: #698EFF;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    border: 3px solid #698EFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    direction: ltr;
+    align-items: flex-start;
+}
+  
+
