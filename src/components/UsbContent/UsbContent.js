@@ -7,7 +7,7 @@ import Image from '../../255-200.png';
 const Main = () => {
 
     const trackListData = [
-        { id: 1, title: 'Rewind', artist: 'Kelela', album: 'Hallucinogen', img: Image },
+        { id: 1, title: 'Rewind', artist: 'Kelela', album: 'Hallucinogen', img: Image, genre:'R&B', bpm: '150 BPM', key: '#F' },
         { id: 2, title: 'Eternity', artist: 'Mondo Grosso', album: 'Self-Titled', img: Image },
         { id: 3, title: 'To Dawn', artist: 'Tetsuya Numora', album: 'FFX OST', img: Image },
         { id: 4, title: 'Belive Me', artist: 'Erika De Casier', album: 'Still', img: Image },

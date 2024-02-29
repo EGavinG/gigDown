@@ -12,14 +12,18 @@ const Tracklist = ({tracklist, setSelectedTrack}) => {
     };
 
     const trackCards = tracklist.map(track => {
-  
+        console.log(track.bpm)
         return (
           <Track
             img={track.img}
             id={track.id}
             title={track.title}
             artist={track.artist}
+            genre={track.genre}
+            bpm={track.bpm}
+            keys={track.keys}
             key={track.id}
+
             onClick={() => handleTrackClick(track)}
           />
         )

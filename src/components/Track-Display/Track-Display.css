@@ -13,9 +13,11 @@
     height: 500px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 h2.title {
+    margin: 5px;
     color: #FC395C;
 }
 
@@ -36,5 +38,11 @@ h3.display-message {
     align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
