@@ -6,8 +6,6 @@ const TrackDisplay = ({selectedTrack}) => {
         return <h3 className='display-message'>No track selected</h3>;
       }
     return (
-        <div className='Track-Display'>
-            <div>
                 <article className="track-details">
                     <img className='album-big' src={selectedTrack.img} alt={`${selectedTrack.title} by ${selectedTrack.artist} - ${selectedTrack.album} Album Cover`}/>
                     <h2 className='title'>{selectedTrack.title}</h2>
@@ -20,8 +18,6 @@ const TrackDisplay = ({selectedTrack}) => {
                     <p className='text'> Duration: {selectedTrack.duration}</p>
                 </section>
                 </article>
-            </div>
-        </div>
     )
 };
 

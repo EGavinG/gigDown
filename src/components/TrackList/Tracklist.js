@@ -24,8 +24,8 @@ const Tracklist = ({tracklist, setSelectedTrack}) => {
             keys={track.keys}
             duration={track.duration}
             key={track.id}
-
             onClick={() => handleTrackClick(track)}
+            tabIndex="0"
           />
         )
       })
