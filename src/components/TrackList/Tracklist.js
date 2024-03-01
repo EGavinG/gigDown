@@ -1,6 +1,6 @@
 import './Tracklist.css'
 import Track from '../Track/Track'
-import TrackDisplay from '../Track-Display/Track-Display'
+import '../Track-Display/Track-Display'
 import { useState } from 'react'
 
 
