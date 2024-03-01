@@ -42,7 +42,7 @@ const Main = () => {
         const getUsbLibrary = () => {
           fetch('http://localhost:3001/usblibrary')
           .then(response => response.json())
-          .then(data => console.log(data))
+          .then(data => setTracklist([...tracklist, ...data.usblibrary]))
           .catch(error => console.log(error.message))
         }
 
@@ -50,7 +50,7 @@ const Main = () => {
           getUsbLibrary();
         }, [])
 
-        const [tracklist, setTracklist] = useState(trackListData);
+        const [tracklist, setTracklist] = useState([]);
         const [selectedTrack, setSelectedTrack] = useState(null);
       
         return (
