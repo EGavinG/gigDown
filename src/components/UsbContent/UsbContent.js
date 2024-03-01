@@ -1,5 +1,5 @@
 import './UsbContent.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Tracklist from '../Tracklist/Tracklist'
 import TrackDisplay from '../Track-Display/Track-Display'
 import Image from '../../255-200.png';
@@ -38,6 +38,17 @@ const Main = () => {
         { id: 29, title: 'Bring Dat Bak', artist: 'Tre Oh Fie', album: 'Remix', img: Image },
         { id: 30, title: 'NO ORDINDARY LOVE 91', artist: 'Akash', album: 'Edit', img: Image }
         ]
+
+        const getUsbLibrary = () => {
+          fetch('http://localhost:3001/usblibrary')
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .catch(error => console.log(error.message))
+        }
+
+        useEffect(() => {
+          getUsbLibrary();
+        }, [])
 
         const [tracklist, setTracklist] = useState(trackListData);
         const [selectedTrack, setSelectedTrack] = useState(null);
