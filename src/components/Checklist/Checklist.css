@@ -13,7 +13,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     width: 800px;
-    height: 455px;
+    height: 435px;
     padding: 10px;
     margin-top: 30px;
     direction: rtl;
@@ -52,4 +52,29 @@ li {
     align-items: flex-start;
 }
   
+label {
+    display: flex;
+    font-family: 'Orbitron';
+    color: #E1E1E1;
+    flex-direction: row;
+    font-size: large;
+    margin-left: 5px;
+}
 
+button.delete {
+    margin-top: 5px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    width: 775px;
+    height: 50px;
+    font-size: large;
+    font-family: 'Orbitron';
+    background-color: black;
+    color: #698EFF;
+    border: 3px solid #698EFF;
+}
+
+button.delete:hover {
+    color: #FC395C;
+    border: 3px solid #FC395C;
+}
