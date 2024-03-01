@@ -16,7 +16,7 @@ const Checklist = ({checklist}) => {
           <p className='text'>Artist:{track.artist}</p>
           <p className='text'>Album:{track.album}</p>
           <p className='text'>Genre:{track.genre}</p>
-          <p className='text'>Track:{track.bpm}</p>
+          <p className='text'>BPM:{track.bpm}</p>
           <p className='text'>Key:{track.key}</p>
           <p className='text'>Duration:{track.duration}</p>
           <p className='text'>Downloaded:{track.downloaded}</p>
