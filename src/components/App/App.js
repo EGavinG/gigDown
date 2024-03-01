@@ -5,6 +5,7 @@ import './App.css';
 import UsbContent from '../UsbContent/UsbContent';
 import ChecklistContent from '../ChecklistContent/ChecklistContent';
 import Navigation from '../Navigation/Navigation';
+import ErrorPage from '../ErrorPage/ErrorPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<UsbContent />} />
           <Route path="/checklist" element={<ChecklistContent />} />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       </div>
     </Router>
