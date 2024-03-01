@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Form from '../Form/Form'
 import Checklist from '../Checklist/Checklist'
 import './ChecklistContent.css'
@@ -12,7 +12,18 @@ function ChecklistContent() {
     { id: 3, title: "Track 3",  artist: 'Artist',downloaded: false }
   ];
 
-  const [checklist, setChecklist] = useState(checklistData);
+  const getChecklist = () => {
+    fetch('http://localhost:3001/checklist')
+    .then(response => response.json())
+    .then(data => setChecklist([...checklist, ...data.checklist]))
+    .catch(error => console.log(error.message))
+  }
+
+  useEffect(() => {
+    getChecklist();
+  }, [])
+
+  const [checklist, setChecklist] = useState([]);
 
   const handleFormSubmit = (trackData) => {
     setChecklist(checklistData => [...checklistData, trackData]);
