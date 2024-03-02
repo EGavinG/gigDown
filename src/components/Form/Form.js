@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Form.css';
 
 function Form({onSubmit}){
@@ -111,3 +112,7 @@ function Form({onSubmit}){
 }
 
 export default Form;
+
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
