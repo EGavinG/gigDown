@@ -6,43 +6,69 @@
   height: 455px;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: max-content;
   gap: 32px 16px;
-  }
+}
 
-  .tracklist-section::-webkit-scrollbar {
-    width: 5px; 
-  }
-  
-  .tracklist-section::-webkit-scrollbar-track {
-    background: #4E2AFF;
-    border-radius: 5px; 
-  }
+.tracklist-section::-webkit-scrollbar {
+  width: 5px;
+}
 
-  .tracklist-section::-webkit-scrollbar-thumb {
-    background: #E1E1E1; 
-    border-radius: 5px; 
-    height: 50px; 
-  }
-  
-  .tracklist-section::-webkit-scrollbar-thumb:hover {
-    background: black;
-  }
+.tracklist-section::-webkit-scrollbar-track {
+  background: #4e2aff;
+  border-radius: 5px;
+}
 
-  .usb-title {
-    margin-top: 15px;
-    display: flex;
-    font-family: 'Orbitron';
-    font-weight: 200;
-    color: #FC395C;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+.tracklist-section::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.tracklist-section::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.usb-title {
+  margin-top: 15px;
+  display: flex;
+  font-family: 'Orbitron';
+  font-weight: 200;
+  color: #fc395c;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+h3.message {
+  margin-left: 215px;
+  color: #fc395c;
+}
+
+
+@media (max-width: 800px) {
+  .tracklist-section {
+    width: 600px; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px 10px; 
   }
 
   h3.message {
-    margin-left: 215px;
-    color: #FC395C;
+    margin-left: 100px; 
+  }
 }
 
+
+@media (max-width: 480px) {
+  .tracklist-section {
+    position: relative;
+    width: 300px; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px 5px; 
+  }
+
+  h3.message {
+    margin-left: 20px; 
+  }
+}

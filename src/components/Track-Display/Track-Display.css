@@ -27,6 +27,7 @@ h2.title {
 }
 
 p.text {
+    margin: 5px;
     font-size: large;
 }
 
@@ -42,11 +43,70 @@ h3.display-message {
 }
 
 .track-info {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+
+@media (max-width: 768px) {
+    .Track-Display {
+        width: 400px; 
+    }
+
+    .track-details {
+        margin-top: -15px;
+        margin-bottom: -65px;
+        display: flex;
+        width: 240px;
+        margin-left: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .album-big {
+        width: 250px;
+     
+    }
+
+    h3.display-message {
+        margin-top: 100px;
+        width: 620px;
+        display: flex;
+        align-items: center; 
+    }
+
+    .track-info {
+        margin-left:30px;
+        width: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Track-Display {
+        width: 300px; 
+    }
+
+    .track-details {
+        margin-bottom: 60px;
+    margin-top: 50px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    }
+
+    .album-big {
+        width: 200px; 
+    }
+
+    h3.display-message {
+        margin-left: 45px;
+        width: 260px; 
+    }
+
+    .track-info {
+        width: 200px; 
+    }
 }

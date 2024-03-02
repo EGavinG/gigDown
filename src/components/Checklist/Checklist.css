@@ -1,10 +1,3 @@
-/* #698EFF Blue
-#FC395C Red 
-#00ED95 Green
-#E1E1E1 White 
-#4E2AFF Purple
-#ffb700 Orange */
-
 .Checklist {
     margin-top: 30px;
 }
@@ -33,7 +26,6 @@
     border-radius: 5px; 
     height: 50px; 
 }
-
 
 h2.checklist-title {
     display: flex;
@@ -77,4 +69,48 @@ button.delete {
 button.delete:hover {
     color: #FC395C;
     border: 3px solid #FC395C;
+}
+
+
+@media (max-width: 768px) {
+    .checklist-section {
+        width: 500px;
+        height: auto;
+        margin-top: 10px; 
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    button.delete {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .checklist-section {
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .Checklist {
+        width: 87%;
+    }
+
+    li {
+        width: 100%;
+        margin: -10px;
+    }
+
+    label {
+        font-size: medium;
+    }
+
+    button.delete {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
