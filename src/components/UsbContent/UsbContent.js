@@ -1,25 +1,33 @@
-import './UsbContent.css'
-import { useState, useEffect } from 'react'
-import Tracklist from '../Tracklist/Tracklist'
-import TrackDisplay from '../Track-Display/Track-Display'
+import React, { useState, useEffect } from 'react';
+import Tracklist from '../Tracklist/Tracklist';
+import TrackDisplay from '../Track-Display/Track-Display';
+import './UsbContent.css';
 
 const Main = () => {
   const [tracklist, setTracklist] = useState([]);
   const [selectedTrack, setSelectedTrack] = useState(null);
   const [filteredTracklist, setFilteredTracklist] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     getUsbLibrary();
   }, []);
 
-  const getUsbLibrary = () => {
-    fetch('http://localhost:3001/usblibrary')
-    .then(response => response.json())
-    .then(data => {
+  const getUsbLibrary = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/usblibrary');
+      if (!response.ok) {
+        throw new Error('Failed to fetch USB library data');
+      }
+      const data = await response.json();
       setTracklist(data.usblibrary);
-      setFilteredTracklist(data.usblibrary); 
-    })
-    .catch(error => console.log(error.message))
+      setFilteredTracklist(data.usblibrary);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false); 
+    }
   };
 
   const handleSearch = (searchTerm) => {
@@ -35,8 +43,14 @@ const Main = () => {
   return (
     <div className="Main">
       <main>
-        <Tracklist tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
-        <TrackDisplay selectedTrack={selectedTrack || {}} />
+        {loading && <p>Loading...</p>} 
+        {error && <p>Error: {error}</p>} 
+        {!loading && !error && (
+          <>
+            <Tracklist tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
+            <TrackDisplay selectedTrack={selectedTrack || {}} />
+          </>
+        )}
       </main>
     </div>
   );
