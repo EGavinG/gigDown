@@ -1,0 +1,7 @@
+{  
+    "checklist": [
+        {"id": 1, "title": "Sexual (li da di)", "artist": "Amber", "album": "Pre-Life Ambient Remix", "genre": "Dance", "bpm": "135", "key": "C-", "duration": "4:58 min" },
+        {"id": 2, "title": "Get Back", "artist": "DJ Tonka", "album": "Get Back EP", "genre": "Dance/Pop", "bpm": "150", "key": "F#", "duration": "5:56 min" },
+        {"id": 3, "title": "Deeper and Deeper Sheps Fierce Remix", "artist": "Madonna", "album": "Erotica Remix Album", "genre": "Pop", "bpm": "145", "key": "C#", "duration": "8:36 min" }
+    ]
+}

@@ -1,0 +1,8 @@
+{ 
+"usblibrary": [
+    { "id": 1, "title": "Rewind", "artist": "Kelela", "album": "Hallucinogen", "img": "./images/Kelela.png", "genre": "R&B", "bpm": "152 BPM", "key": "F♭", "duration": "3:35 min" },
+    { "id": 2, "title": "Eternity", "artist": "Mondo Grosso", "album": "Self-Titled", "img": "./images/Mondo.png", "genre": "Dance", "bpm": "120 BPM", "key": "A#", "duration": "4:24 min" },
+    { "id": 3, "title": "To Dawn", "artist": "Tetsuya Numora", "album": "FFX OST", "img": "./images/Tetsuya.png", "genre": "Electronic", "bpm": "90 BPM", "key": "G♭", "duration": "2:54 min" },
+    { "id": 30, "title": "NO ORDINDARY LOVE 91", "artist": "Akash", "album": "Edit", "img": "./images/Ordinary.png", "genre": "DNB", "bpm": "150 BPM", "key": "F", "duration": "5:00 min" }
+ ]
+}
