@@ -3,7 +3,6 @@ import './Track.css'
 
 
 const Track = ({ artist, album, title, img, onClick, tabIndex }) => {
-    console.log(img)
 
     return (
         <section className ='Track' onClick={onClick} tabIndex={tabIndex}>
