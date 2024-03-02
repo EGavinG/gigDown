@@ -16,7 +16,7 @@ const Main = () => {
 
   const getUsbLibrary = async () => {
     try {
-      const response = await fetch('http://localhost:3001/usblibrary');
+      const response = await fetch('http://localhost:3001/api/v1/usblibrary');
       if (!response.ok) {
         throw new Error('Failed to fetch USB library data');
       }
@@ -43,8 +43,8 @@ const Main = () => {
   return (
     <div className="Main">
       <main>
-        {loading && <p>Loading...</p>} 
-        {error && <p>Error: {error}</p>} 
+        {loading && <h2 className='loading'>Loading...</h2>} 
+        {error && <h2 className='error'>Error: {error}</h2>} 
         {!loading && !error && (
           <>
             <Tracklist tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 

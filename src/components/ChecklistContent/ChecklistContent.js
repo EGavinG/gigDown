@@ -15,7 +15,7 @@ function ChecklistContent() {
   const getChecklist = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/checklist');
+      const response = await fetch('http://localhost:3001/api/v1/checklist');
       if (!response.ok) {
         throw new Error('Failed to fetch checklist data');
       }
@@ -30,7 +30,7 @@ function ChecklistContent() {
 
   const handleFormSubmit = async (trackData) => {
     try {
-      const response = await fetch('http://localhost:3001/checklist', {
+      const response = await fetch('http://localhost:3001/api/v1/checklist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function ChecklistContent() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:3001/checklist/${id}`, {
+      await fetch(`http://localhost:3001/api/v1/checklist/${id}`, {
         method: 'DELETE',
       });
       const updatedChecklist = checklist.filter(track => track.id !== id);

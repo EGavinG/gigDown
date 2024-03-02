@@ -4,6 +4,17 @@ Main {
     width: 1280px;
   }
   
+  .error, .loading {
+    margin-top: 200px;
+    display: flex;
+    color: #fc395c;
+    font-family: 'Orbitron';
+    font-weight: 200;
+    width: 1280px;
+    align-items: center;
+    justify-content: center;
+  }
+
   h2,
   h3,
   p {
