@@ -32,10 +32,11 @@ function Form({onSubmit}){
   };
 
     return (
-      <form className='Form' onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <h2 className='input-title'>Input Track</h2>
     
-        <input 
+        <input  
+          className='input-field'
           type='text'
           placeholder='Title'
           name='title'
@@ -45,6 +46,7 @@ function Form({onSubmit}){
         />
 
         <input
+          className='input-field'
           type='text'
           placeholder='Artist'
           name='artist'
@@ -54,6 +56,7 @@ function Form({onSubmit}){
         />
 
         <input
+          className='input-field'
           type='text'
           placeholder='Album'
           name='album'
@@ -63,6 +66,7 @@ function Form({onSubmit}){
         />
 
         <input
+          className='input-field'
           type='text'
           placeholder='Genre'
           name='genre'
@@ -72,6 +76,7 @@ function Form({onSubmit}){
         />  
 
         <input
+          className='input-field'
           type='text'
           placeholder='BPM'
           name='bpm'
@@ -81,6 +86,7 @@ function Form({onSubmit}){
         />  
 
         <input
+          className='input-field'
           type='text'
           placeholder='Key'
           name='key'
@@ -90,6 +96,7 @@ function Form({onSubmit}){
         />  
 
         <input
+          className='input-field'
           type='text'
           placeholder='Duration'
           name='duration'
