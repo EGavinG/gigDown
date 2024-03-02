@@ -1,4 +1,4 @@
-Form {
+.form {
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -8,12 +8,12 @@ Form {
     margin-left: 25px;
 }
 
-h2.input-title {
+.form .input-title {
     margin: 5px;
     color: #ffb700;
 }
 
-input {
+.form .input-field {
     margin: 5px;
     padding: 10px; 
     width: 100%; 
@@ -28,13 +28,13 @@ input {
     outline: none;
 }
 
-input::placeholder {
+.form .input-field::placeholder {
     font-size: large;
     font-weight: 100;
     color: #E1E1E1; 
 }
 
-button.submit {
+.form button.submit {
     margin-top: 20px;
     width: 450px;
     height: 50px;
@@ -45,7 +45,7 @@ button.submit {
     border: 3px solid #ffb700;
 }
 
-button.submit:hover {
+.form button.submit:hover {
     color: #00ED95;
     border: 3px solid #00ED95;
 }
