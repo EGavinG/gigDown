@@ -1,4 +1,5 @@
 import './Checklist.css';
+import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
 const Checklist = ({ checklist, onDelete }) => {
@@ -51,5 +52,19 @@ const Checklist = ({ checklist, onDelete }) => {
     </div>
   );
 }
+
+Checklist.propTypes = {
+  checklist: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    artist: PropTypes.string.isRequired,
+    album: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
+    bpm: PropTypes.string.isRequired,
+    key: PropTypes.string.isRequired,
+    duration: PropTypes.string.isRequired,
+  })).isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
 
 export default Checklist;

@@ -1,4 +1,5 @@
 import './Tracklist.css'
+import PropTypes from 'prop-types';
 import Track from '../Track/Track'
 import '../Track-Display/Track-Display'
 import SearchBar from '../SeachBar/SearchBar'
@@ -21,7 +22,7 @@ const Tracklist = ({tracklist, setSelectedTrack, handleSearch}) => {
             artist={track.artist}
             genre={track.genre}
             bpm={track.bpm}
-            keys={track.keys}
+            keys={track.key}
             duration={track.duration}
             key={track.id}
             onClick={() => handleTrackClick(track)}
@@ -41,5 +42,20 @@ const Tracklist = ({tracklist, setSelectedTrack, handleSearch}) => {
         </div>
     )
 }
+
+Tracklist.propTypes = {
+  tracklist: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      artist: PropTypes.string.isRequired,
+      genre: PropTypes.string.isRequired,
+      bpm: PropTypes.string.isRequired,
+      key: PropTypes.string.isRequired,
+      duration: PropTypes.string.isRequired,
+  })).isRequired,
+  setSelectedTrack: PropTypes.func.isRequired,
+  handleSearch: PropTypes.func.isRequired,
+};
 
 export default Tracklist
