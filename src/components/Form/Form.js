@@ -111,8 +111,8 @@ function Form({onSubmit}){
     )
 }
 
-export default Form;
-
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
+
+export default Form;
