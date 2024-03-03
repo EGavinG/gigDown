@@ -31,3 +31,4 @@ DJ's face challenges in efficiently managing their music collections on usbs dri
 ## Application Screenshot
 
 <img width="1440" alt="Screenshot 2024-03-02 at 7 02 56 PM" src="https://github.com/EGavinG/gigDown/assets/68877187/38df0aca-8b4e-4e98-9fa0-7c7ff0a262eb">
+<img width="1440" alt="Screenshot 2024-03-02 at 7 03 11 PM" src="https://github.com/EGavinG/gigDown/assets/68877187/f340d113-2273-4039-a0d8-54bf77a75c3e">
