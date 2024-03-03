@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import TrackList from '/src/components/TrackList/TrackList'
+import TrackList from '../TrackList/TrackList'
 import TrackDisplay from '../TrackDisplay/TrackDisplay';
 import './UsbContent.css';
 
-const Main = () => {
+const UsbContent = () => {
   const [tracklist, setTracklist] = useState([]);
   const [selectedTrack, setSelectedTrack] = useState(null);
   const [filteredTracklist, setFilteredTracklist] = useState([]);
@@ -56,4 +56,4 @@ const Main = () => {
   );
 }
 
-export default Main;
+export default UsbContent;
