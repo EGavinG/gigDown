@@ -17,10 +17,10 @@ function ChecklistContent() {
     try {
       const response = await fetch('http://localhost:3001/api/v1/checklist');
       if (!response.ok) {
-        throw new Error('Failed to fetch checklist data');
+        throw new Error('Failed to get checklist data');
       }
       const data = await response.json();
-      setChecklist([...checklist, ...data.checklist]);
+      setChecklist(data.checklist);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -41,6 +41,7 @@ function ChecklistContent() {
         throw new Error('Failed to add track to checklist');
       }
       const data = await response.json();
+      setChecklist(prevChecklist => [data, ...prevChecklist]);
       console.log('Track added to checklist:', data);
     } catch (error) {
       setError(error.message);
@@ -63,7 +64,7 @@ function ChecklistContent() {
   return (
     <main className='ChecklistData'>
       {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
+      {error && <h2 className='error'>Error: {error}</h2>}
       <Form onSubmit={handleFormSubmit} />
       <Checklist checklist={checklist} onDelete={handleDelete} />
     </main>
@@ -71,3 +72,4 @@ function ChecklistContent() {
 }
 
 export default ChecklistContent;
+

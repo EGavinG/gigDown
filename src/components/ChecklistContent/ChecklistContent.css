@@ -4,6 +4,9 @@
     justify-content: center;
 }
 
+h2.error {
+    color: #FC395C;
+}
 
 @media (max-width: 768px) {
     .ChecklistData {
