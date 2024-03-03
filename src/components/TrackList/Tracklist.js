@@ -1,7 +1,7 @@
-import './Tracklist.css'
+import './TrackList.css'
 import PropTypes from 'prop-types';
 import Track from '../Track/Track'
-import '../Track-Display/Track-Display'
+import TrackDisplay from '../TrackDisplay/TrackDisplay'
 import SearchBar from '../SeachBar/SearchBar'
 
 

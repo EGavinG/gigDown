@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../Tracklist/Tracklist';
-import '../Track-Display/Track-Display';
+import TrackList from '../TrackList/TrackList'
+import TrackDisplay from '../TrackDisplay/TrackDisplay';
 import './UsbContent.css';
 
 const Main = () => {
@@ -47,7 +47,7 @@ const Main = () => {
         {error && <h2 className='error'>Error: {error}</h2>} 
         {!loading && !error && (
           <>
-            <Tracklist tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
+            <TrackList tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
             <TrackDisplay selectedTrack={selectedTrack || {}} />
           </>
         )}

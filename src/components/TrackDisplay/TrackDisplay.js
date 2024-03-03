@@ -1,4 +1,4 @@
-import './Track-Display.css';
+import './TrackDisplay.css';
 import PropTypes from 'prop-types';
 
 const TrackDisplay = ({ selectedTrack }) => {
