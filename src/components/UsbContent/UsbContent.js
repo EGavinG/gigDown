@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Tracklist from '../Tracklist/Tracklist';
+import '../Tracklist/Tracklist';
 import '../Track-Display/Track-Display';
 import './UsbContent.css';
 
