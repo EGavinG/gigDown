@@ -47,7 +47,7 @@ const UsbContent = () => {
         {error && <h2 className='error'>Error: {error}</h2>} 
         {!loading && !error && (
           <>
-            <TrackList tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
+            <TrackList Tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
             <TrackDisplay selectedTrack={selectedTrack || {}} />
           </>
         )}
