@@ -11,7 +11,7 @@ describe('Checklist Component', () => {
     });
 
     it('displays the checklist when GET request is successful', () => {
-      cy.get('.text').should('have.length', 21); // Assuming 3 items in checklist.json, each with 7 text elements
+      cy.get('.text').should('have.length', 21); 
     });
   });
 
