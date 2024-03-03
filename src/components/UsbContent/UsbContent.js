@@ -16,7 +16,7 @@ const UsbContent = () => {
 
   const getUsbLibrary = async () => {
     try {
-      const response = await fetch('https://gig-down-bgpn5574g-gavin-garcias-projects.vercel.app/api/v1/usblibrary');
+      const response = await fetch('http://localhost:3001/api/v1/usblibrary');
       if (!response.ok) {
         throw new Error('Failed to fetch USB library data');
       }
