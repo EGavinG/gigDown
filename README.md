@@ -28,6 +28,6 @@ DJ's face challenges in efficiently managing their music collections on usbs dri
 - Feature to cross check Usb Library with Download Checklist for track presence. 
 - Album artwork upload ability within form.
 
-## Application ScreenShot
+## Application Screenshot
 
 <img width="1440" alt="Screenshot 2024-03-02 at 7 02 56 PM" src="https://github.com/EGavinG/gigDown/assets/68877187/38df0aca-8b4e-4e98-9fa0-7c7ff0a262eb">
