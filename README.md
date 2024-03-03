@@ -1,71 +1,37 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # gigDown
+
+## Deployment Link 
+[Vercel Deployment Link](https://gig-down-19pepxsmt-gavin-garcias-projects.vercel.app/)
+
+## Set Up Instructions:
+- Git clone down this repo in terminal
+- Run `npm install`
+- Run `npm start`
+- Will run in `localhost:3000`
+- clone down the Server repo [here](https://github.com/EGavinG/gigDown-Server)
+- Run `npm install`
+- Run `nodemon server.js`
+- Should receive a message in terminal `gigDown Server is running on http://localhost:3001`
+  
+## Abstract
+DJ's face challenges in efficiently managing their music collections on usbs drives while preparing for gigs, particularly in organizing new tracks and ensuring they have necessary music downloaded for their performances. GigDown is here to help! This application is to rectify helping DJ's ranging from all types from novice to veteran to organize their music library and have a checklist for tracks needed for future gigs.
+
+## Contributors
+[Gavin Garcia](https://github.com/EGavinG/)
+[Ricky Tran](https://github.com/rickytrandev)
+
+## Wins/Challenges
+- Challenge - Making this application responsive across all devices as styling for each component was a feat to overcome. 
+- Win - Having a working application I as the creator can use and so many of my fellow DJ's who face this problem.
+- Challenge - The developement time frame for sure was a challenge as I still want to finetune this application to be its most refined.
+- Win - Fully loving the styling and usage of this application.
+
+## Future Additions
+- More robust styling with responsive design.
+- Feature to cross check Usb Library with Download Checklist for track presence. 
+- Album artwork upload ability within form.
+
+## Application Screenshot
+
+<img width="1440" alt="Screenshot 2024-03-02 at 7 02 56 PM" src="https://github.com/EGavinG/gigDown/assets/68877187/38df0aca-8b4e-4e98-9fa0-7c7ff0a262eb">
+<img width="1440" alt="Screenshot 2024-03-02 at 7 03 11 PM" src="https://github.com/EGavinG/gigDown/assets/68877187/f340d113-2273-4039-a0d8-54bf77a75c3e">
