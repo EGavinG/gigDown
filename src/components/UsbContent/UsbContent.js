@@ -16,7 +16,7 @@ const UsbContent = () => {
 
   const getUsbLibrary = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/v1/usblibrary');
+      const response = await fetch('https://gig-down-bgpn5574g-gavin-garcias-projects.vercel.app/api/v1/usblibrary');
       if (!response.ok) {
         throw new Error('Failed to fetch USB library data');
       }
@@ -47,7 +47,7 @@ const UsbContent = () => {
         {error && <h2 className='error'>Error: {error}</h2>} 
         {!loading && !error && (
           <>
-            <TrackList Tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
+            <TrackList tracklist={filteredTracklist} setSelectedTrack={setSelectedTrack} handleSearch={handleSearch} /> 
             <TrackDisplay selectedTrack={selectedTrack || {}} />
           </>
         )}
