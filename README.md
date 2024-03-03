@@ -25,11 +25,13 @@ DJ's face challenges in efficiently managing their music collections on usbs dri
 - Win - Having a working application I as the creator can use and so many of my fellow DJ's who face this problem.
 - Challenge - The developement time frame for sure was a challenge as I still want to finetune this application to be its most refined.
 - Win - Fully loving the styling and usage of this application.
+- Challenge - Getting Deployment with fetch requests configured (continuation needed)
 
 ## Future Additions
 - More robust styling with responsive design.
 - Feature to cross check Usb Library with Download Checklist for track presence. 
 - Album artwork upload ability within form.
+- Getting Deployment with fetch requests configured (continuation needed)
 
 ## Application Screenshot
 
