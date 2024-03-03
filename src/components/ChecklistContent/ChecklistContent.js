@@ -22,7 +22,7 @@ function ChecklistContent() {
       const data = await response.json();
       setChecklist(data.checklist);
     } catch (error) {
-      setError(error.message);
+      setError(error.message); 
     } finally {
       setLoading(false);
     }
@@ -44,7 +44,7 @@ function ChecklistContent() {
       setChecklist(prevChecklist => [data, ...prevChecklist]);
       console.log('Track added to checklist:', data);
     } catch (error) {
-      setError(error.message);
+      setError(error.message); 
     }
   };
 
@@ -57,14 +57,14 @@ function ChecklistContent() {
       setChecklist(updatedChecklist);
       console.log('Track deleted from checklist');
     } catch (error) {
-      setError(error.message);
+      setError('Failed to delete track.');
     }
   };
 
   return (
     <main className='ChecklistData'>
       {loading && <p>Loading...</p>}
-      {error && <h2 className='error'>Error: {error}</h2>}
+      {error && <h2 className='error'>Error: {error}</h2>} 
       <Form onSubmit={handleFormSubmit} />
       <Checklist checklist={checklist} onDelete={handleDelete} />
     </main>
@@ -72,4 +72,3 @@ function ChecklistContent() {
 }
 
 export default ChecklistContent;
-
