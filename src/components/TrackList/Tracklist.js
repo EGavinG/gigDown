@@ -1,12 +1,11 @@
 import './TrackList.css'
 import PropTypes from 'prop-types';
 import Track from '../Track/Track'
-import TrackDisplay from '../TrackDisplay/TrackDisplay'
 import SearchBar from '../SeachBar/SearchBar'
 
 
 
-const Tracklist = ({tracklist, setSelectedTrack, handleSearch}) => {
+const TrackList = ({tracklist, setSelectedTrack, handleSearch}) => {
 
     const handleTrackClick = (track) => {
       setSelectedTrack(track);
@@ -43,7 +42,7 @@ const Tracklist = ({tracklist, setSelectedTrack, handleSearch}) => {
     )
 }
 
-Tracklist.propTypes = {
+TrackList.propTypes = {
   tracklist: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
       img: PropTypes.string.isRequired,
@@ -58,4 +57,4 @@ Tracklist.propTypes = {
   handleSearch: PropTypes.func.isRequired,
 };
 
-export default Tracklist
+export default TrackList
