@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Tracklist from '../Tracklist/Tracklist';
-import TrackDisplay from '../Track-Display/Track-Display';
+import '../Track-Display/Track-Display';
 import './UsbContent.css';
 
 const Main = () => {
