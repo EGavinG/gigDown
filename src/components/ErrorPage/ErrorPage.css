@@ -1,4 +1,5 @@
 .ErrorPage {
+    width: 100vh;
     display: flex;
     margin-top: 180px;
     justify-content: center;
